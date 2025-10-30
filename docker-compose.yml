@@ -1,0 +1,7 @@
+services:
+  robotitos-web:
+    build: .
+    container_name: robotitos-web
+    ports:
+      - "8080:80"     # puerto interno del contenedor -> externo del VPS
+    restart: unless-stopped
